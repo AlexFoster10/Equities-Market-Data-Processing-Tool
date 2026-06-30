@@ -12,6 +12,8 @@ import yaml
 with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
+##use sqlalchemy to improve db 
+
 
 # Database functions
 def create_new_table(df : pd.DataFrame, db_name=config['database']['path'], table_name=config['database']['table_name']):
